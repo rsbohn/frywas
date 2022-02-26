@@ -115,7 +115,7 @@ def main():
             midi.send(NoteOn(last_note, velocity))
             pick.y = 80 + string * h + h // 2
             string = string - 1
-            if rando.hit:
+            if rando.activated:
                 randomize(fingerboard)
                 rando.unselect()
             if string < 0:
